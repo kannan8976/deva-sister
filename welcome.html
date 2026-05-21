@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1 id="welcomeText"></h1>
+
+  <p class="see-text">See This 👇</p>
+
+  <button class="emoji-btn" onclick="openSurprise()">
+    💖
+  </button>
+</div>
+
+<script>
+  const name = localStorage.getItem("username");
+
+  document.getElementById("welcomeText").innerText =
+    `Hi ${name}, Welcome!`;
+
+  function openSurprise(){
+    window.location.href = "surprise.html";
+  }
+</script>
+
+</body>
+</html>

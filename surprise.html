@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Special Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="surprise-body">
+
+<div class="overlay">
+    <h3>click</h3>
+
+  <button class="heart-btn" onclick="playSong()">
+    ❤️
+  </button>
+
+  <audio id="song">
+    <source src="song.mp3" type="audio/mp3">
+  </audio>
+
+</div>
+
+<script>
+  function playSong(){
+    document.getElementById("song").play();
+  }
+</script>
+
+</body>
+</html>
